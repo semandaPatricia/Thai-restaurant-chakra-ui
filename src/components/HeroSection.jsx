@@ -44,8 +44,7 @@ const HeroSection = () => {
             fontWeight="400"
             color="gray.500"
           >
-            TemplatesKart provides the best ChakraUI templates. Focus on your
-            business, not on the boilerplate.
+            Experience a quick meal that is tailored to your own taste buds.
           </Text>
           <HStack
             spacing={{ base: 0, sm: 2 }}
@@ -67,7 +66,7 @@ const HeroSection = () => {
               bgGradient="linear(to-r, green.200, #0ea5e9, #2563eb)"
               _hover={{ bgGradient: 'linear(to-r, green.200, #0ea5e9, #2563eb)', opacity: 0.9 }}
             >
-              <chakra.span> Explore Our Menu </chakra.span>
+              <chakra.span fontSize={20}> Make your own Meal </chakra.span>
               <Icon as={BsArrowUpRight} h={4} w={4} ml={1} />
             </chakra.button>
             </chakra.a>
@@ -85,8 +84,9 @@ const HeroSection = () => {
               boxShadow="md"
               as={Link}
               zIndex={55555555}
+              fontSize={20}
             >
-              Watch Demo
+              view Menu
             </Box>
           </HStack>
         </Stack>

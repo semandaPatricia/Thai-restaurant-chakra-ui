@@ -21,7 +21,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
 import { BiChevronDown } from 'react-icons/bi';
 import { RiFlashlightFill } from 'react-icons/ri';
-
+import { FiShoppingCart } from "react-icons/fi";
 const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
@@ -108,7 +108,7 @@ export default function Navbar() {
         </HStack>
 
         <Button colorScheme="green" size="md" rounded="md" display={{ base: 'none', md: 'block' }}>
-          Sign in
+        <FiShoppingCart />
         </Button>
         <IconButton
           size="md"

@@ -7,7 +7,7 @@ import Contact from './pages/contact';
 import Home from './pages/Home/index';
 import Menu from './pages/menu/index';
 import About from './pages/about/index';
-
+import Review from './components/Review'
 export default function App() {
   return (
     <>
@@ -37,6 +37,7 @@ function Homepage() {
     <>
       {/* Render HeroSection and Testimonials only on the home page */}
       <HeroSection />
+      <Review/>
       
     </>
   );
