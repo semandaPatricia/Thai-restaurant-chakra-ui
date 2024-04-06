@@ -52,7 +52,7 @@ const HeroSection = () => {
             flexWrap="wrap"
           >
           
-          <chakra.a href="/menu">
+          <chakra.a href="/all">
             <chakra.button
               w={{ base: '100%', sm: 'auto' }}
               h={12}
@@ -71,23 +71,7 @@ const HeroSection = () => {
             </chakra.button>
             </chakra.a>
             
-            <Box
-              d="flex"
-              justifyContent="center"
-              bg={useColorModeValue("white", "gray.800")}
-              w={{ base: "100%", sm: "auto" }}
-              border="1px solid"
-              borderColor="gray.300"
-              p={3}
-              lineHeight={1.18}
-              rounded="md"
-              boxShadow="md"
-              as={Link}
-              zIndex={55555555}
-              fontSize={20}
-            >
-              view Menu
-            </Box>
+           
           </HStack>
         </Stack>
         <Box ml={{ base: 0, md: 5 }} pos="relative">

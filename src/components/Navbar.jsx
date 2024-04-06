@@ -24,23 +24,33 @@ import { RiFlashlightFill } from 'react-icons/ri';
 import { FiShoppingCart } from "react-icons/fi";
 const navLinks = [
   { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
+  
   { name: 'Menu', path: '/menu' },
-  { name: 'Contact', path: '/contact' }
+  { name: 'About', path: '/about' },
+  
+  { name: 'Contact', path: '/contact' },
+  {/* { name: 'Make your own meal', path: '/makeyourmeal' }, */}
+ 
+  
+ 
 ];
 
 const dropdownLinks = [
   {
-    name: 'Blog',
-    path: '#'
+    name: 'All',
+    path: '/all'
   },
   {
-    name: 'Careers',
-    path: '#'
+    name: 'Bases',
+    path: '/base'
   },
   {
-    name: 'Where to find Us?',
-    path: '#'
+    name: 'Toppings',
+    path: '/topping'
+  },
+  {
+    name: 'Sauces',
+    path: '/sauce'
   }
 ];
 
@@ -72,12 +82,13 @@ export default function Navbar() {
             ))}
 
             {/* Dropdown Menu */}
+            
             <Menu autoSelect={false} isLazy>
               {({ isOpen, onClose }) => (
                 <>
                   <MenuButton _hover={{ color: 'blue.400' }}>
                     <Flex alignItems="center">
-                      <Text>Community</Text>
+                      <Text>Make your own meal</Text>
                       <Icon
                         as={BiChevronDown}
                         h={5}
@@ -104,6 +115,7 @@ export default function Navbar() {
                 </>
               )}
             </Menu>
+            
           </HStack>
         </HStack>
 
@@ -127,7 +139,7 @@ export default function Navbar() {
               <NavLink key={index} {...link} onClose={onClose} />
             ))}
             <Text fontWeight="semibold" color="gray.500">
-              Community
+              Make your own meal
             </Text>
             <Stack pl={2} spacing={1} mt={'0 !important'}>
               {dropdownLinks.map((link, index) => (
